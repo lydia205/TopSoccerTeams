@@ -30,6 +30,19 @@ class MainActivity : AppCompatActivity() {
         "Kaizer chiefs",
         "Cape town city FC")
 
+    //looks for the shortest entry in a string array
+    fun getshortestString(arr: Array<String>) : String {
+        var shortestlength = 0
+        var shortestElement = ""
+        for (element in arr) {
+            if (element.count() > shortestlength) {
+            shortestlength = element.count()
+            shortestElement = element
+            }
+        }
+       return shortestElement
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
