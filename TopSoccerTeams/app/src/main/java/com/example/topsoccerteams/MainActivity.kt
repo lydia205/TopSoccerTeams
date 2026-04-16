@@ -12,12 +12,12 @@ import android.util.Log.v
 import java.util.Arrays
 
 //logs the content of an array of strings
-fun logArrayValues(array: Array<String> , limit: Int = 0) {
+fun logArrayValues(arr: Array<String> , limit: Int = 0) {
     if (limit == 0) {
         Log.v("Array Values", Arrays.toString(arr))
     } else {
         Log.v("Array Values", Arrays.toString(
-            arr.sliceArray(0...limit -1)))
+            arr.sliceArray(0..limit -1)))
     }
 }
 class MainActivity : AppCompatActivity() {
@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
 
         //call the method to log array values
         logArrayValues(teams)
+        logArrayValues(teams,2)
 
         //creating variable te hold textview tex
         val teamsTxt = findViewById<TextView>(R.id.teamsTxt)
