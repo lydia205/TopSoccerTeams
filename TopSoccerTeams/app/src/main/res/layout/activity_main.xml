@@ -14,7 +14,7 @@
         android:fontFamily="@font/anton"
         android:text="Top south African Teams"
         android:textColor="#E7E2E2"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.401"
@@ -28,7 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginTop="321dp"
+        android:layout_marginEnd="159dp"
         android:text="Teams"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
